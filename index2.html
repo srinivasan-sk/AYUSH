@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Virtual Herbal Garden</title>
+  <link rel="stylesheet" href="./index2.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>Virtual Herbal Garden</h1>
+    <input type="text" id="search-input" placeholder="Search for a plant..." onkeyup="filterPlants()">
+
+    <!-- Plant cards -->
+    <div class="card" data-plant-name="Aloe Vera">
+      <h2>Aloe Vera</h2>
+      <img src="./Images/aloe_01.jpg" alt="Aloe Vera" class="plant-image" onclick="openModelModal('aloe-vera')">
+      <p><strong>Medicinal Uses:</strong> Skin Care, Immunity</p>
+      <button onclick="openDetailsModal('aloe-vera')">View Details</button>
+    </div>
+
+    <div class="card" data-plant-name="Neem">
+      <h2>Neem</h2>
+      <img src="./Images/Neem.jpg" alt="Neem" class="plant-image" onclick="openModelModal('neem')">
+      <p><strong>Medicinal Uses:</strong> Skin Care, Digestion</p>
+      <button onclick="openDetailsModal('neem')">View Details</button>
+    </div>
+
+    <div class="card" data-plant-name="Ginger">
+      <h2>Ginger</h2>
+      <img src="./Images/Ginger.avif" alt="Ginger" class="plant-image" onclick="openModelModal('ginger')">
+      <p><strong>Medicinal Uses:</strong>  Diabetes and Muscular Cramps</p>
+      <button onclick="openDetailsModal('ginger')">View Details</button>
+    </div>
+  </div>
+
+  <!-- Modal for 3D Model -->
+  <div id="model-modal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('model-modal')">&times;</span>
+      <h2 id="model-plant-name">Plant Name</h2>
+      <div id="3d-model-container"></div>
+    </div>
+  </div>
+
+  <!-- Modal for Plant Details -->
+  <div id="details-modal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('details-modal')">&times;</span>
+      <h2 id="plant-name">Plant Name</h2>
+      <p><strong>Botanical Name:</strong> <span id="botanical-name"></span></p>
+      <p><strong>Habitat:</strong> <span id="habitat"></span></p>
+      <p><strong>Medicinal Uses:</strong> <span id="medicinal-uses"></span></p>
+      <p><strong>Methods of Cultivation:</strong> <span id="cultivation-methods"></span></p>
+    </div>
+  </div>
+
+  <script src="./index2.js"></script>
+
+</body>
+</html>
