@@ -23,6 +23,14 @@ const plantsData = {
     medicinalUses: 'helps in the management of conditions like diabetes and muscular cramps.',
     cultivationMethods: 'Ginger is usually planted in March or April, when the monsoon starts.',
     modelFile: './images/ginger_tree.glb'  // Path to 3D model file
+  } ,
+  'Aswagandha': {
+    name: 'Aswagandha',
+    botanicalName: 'Zingiber officinale',
+    habitat: 'humid, partly-shaded habitats in moist tropical and subtropical forests of Southeast Asia',
+    medicinalUses: 'helps in the management of conditions like diabetes and muscular cramps.',
+    cultivationMethods: 'Ginger is usually planted in March or April, when the monsoon starts.',
+    modelFile: './images/ginger_tree.glb'  // Path to 3D model file
   }  
 };
 
